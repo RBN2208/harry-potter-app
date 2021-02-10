@@ -1,3 +1,3 @@
-import AppHeader from './components/AppHeader'
+import App from './App'
 
-document.body.append(AppHeader('JavaScript App Template'))
+App()
