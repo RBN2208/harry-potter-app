@@ -2,13 +2,12 @@
   "name": "javascript-app-template",
   "version": "0.0.1",
   "private": true,
-  "author": "neuefische GmbH",
+  "author": "Robin Steinhauser",
   "description": "",
   "keywords": [],
   "license": "ISC",
   "contributors": [
-    "Lene Frei",
-    "Jerry Erbs"
+    "Robin Steinhauser"
   ],
   "scripts": {
     "prettier:write": "prettier --write .",
@@ -27,7 +26,7 @@
     "*.html": "htmlhint"
   },
   "devDependencies": {
-    "@babel/core": "7.12.10",
+    "@babel/core": "^7.12.13",
     "@storybook/addon-a11y": "6.1.17",
     "@storybook/addon-actions": "6.1.17",
     "@storybook/addon-design-assets": "6.1.17",
@@ -42,9 +41,10 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "htmlhint": "0.14.2",
-    "husky": "^5.0.9",
-    "lint-staged": "10.5.3",
+    "lint-staged": "^10.5.4",
     "prettier": "2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "snowpack": "3.0.11",
     "stylelint": "13.9.0",
     "stylelint-config-prettier": "8.0.2",
@@ -52,10 +52,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuefische/javascript-app-template.git"
+    "url": "git+https://github.com/RBN2208/harry-potter-app"
   },
   "bugs": {
-    "url": "https://github.com/neuefische/javascript-app-template/issues"
+    "url": "https://github.com/RBN2208/harry-potter-app/issues"
   },
-  "homepage": "https://github.com/neuefische/javascript-app-template#readme"
+  "homepage": "https://github.com/RBN2208/harry-potter-app#readme"
 }
