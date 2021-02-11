@@ -3,7 +3,7 @@ import Card from '../Card'
 import Homebutton from '../Homebutton'
 import './PeoplePage.css'
 
-export default function PeoplePage(onNavigate, character) {
+export default function PeoplePage(onNavigate) {
   const el = createElement('main', { className: 'Peoplepage', hidden: true })
   const homebutton = Homebutton(onNavigate)
   el.append(homebutton)
