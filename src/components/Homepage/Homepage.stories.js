@@ -5,4 +5,4 @@ export default {
   component: Homepage,
 }
 
-export const JS = () => Homepage()
+export const JS = () => Homepage().el

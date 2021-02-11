@@ -18,9 +18,8 @@ export default function App() {
     .catch(error => handleGetCharacterError(error))
 
   function createCards(characters) {
-    characters.map(character => Card(character))
-    homepage.setCards(characters)
-    // document.body.append(...cards)
+    const cards = characters.map(character => Card(character))
+    homepage.append(...cards)
   }
 
   function handleGetCharacterError(error) {
