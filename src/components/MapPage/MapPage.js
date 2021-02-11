@@ -2,9 +2,9 @@ import createElement from '../../lib/createElement'
 import Homebutton from '../Homebutton'
 import './MapPage.css'
 
-export default function MapPage() {
+export default function MapPage(onNavigate) {
   const el = createElement('main', { className: 'Mappage', hidden: true })
-  const homebutton = Homebutton()
+  const homebutton = Homebutton(onNavigate)
   el.append(homebutton)
 
   function show() {
@@ -16,7 +16,6 @@ export default function MapPage() {
 
   return {
     el,
-    homebutton,
     show,
     hide,
   }

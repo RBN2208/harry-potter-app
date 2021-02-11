@@ -13,10 +13,10 @@ import CreatePage from './components/CreatePage'
 export default function App() {
   const header = AppHeader('Harry Potter App')
   const homePage = Homepage(onNavigate)
-  const peoplePage = PeoplePage()
-  const mapPage = MapPage()
-  const housePage = HousePage()
-  const createPage = CreatePage()
+  const peoplePage = PeoplePage(onNavigate)
+  const mapPage = MapPage(onNavigate)
+  const housePage = HousePage(onNavigate)
+  const createPage = CreatePage(onNavigate)
 
   const grid = Grid(
     header,
