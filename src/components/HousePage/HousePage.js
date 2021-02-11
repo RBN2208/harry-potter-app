@@ -1,8 +1,8 @@
 import createElement from '../../lib/createElement'
-import './Homepage.css'
+import './HousePage.css'
 
-export default function Homepage() {
-  const el = createElement('main', { className: 'Homepage' })
+export default function HousePage() {
+  const el = createElement('main', { className: 'Housepage', hidden: true })
 
   function show() {
     el.hidden = false

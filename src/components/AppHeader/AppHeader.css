@@ -1,5 +1,6 @@
 .AppHeader {
-  background: var(--color-primary);
+  background: var(--color-grey);
+  box-shadow: 0 0 10px var(--color-black);
   color: var(--color-white);
   padding: 12px;
 }

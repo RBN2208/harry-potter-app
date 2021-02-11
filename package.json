@@ -58,5 +58,8 @@
   "bugs": {
     "url": "https://github.com/RBN2208/harry-potter-app/issues"
   },
-  "homepage": "https://github.com/RBN2208/harry-potter-app#readme"
+  "homepage": "https://github.com/RBN2208/harry-potter-app#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
+  }
 }

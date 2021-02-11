@@ -1,8 +1,8 @@
 import createElement from '../../lib/createElement'
-import './Homepage.css'
+import './MapPage.css'
 
-export default function Homepage() {
-  const el = createElement('main', { className: 'Homepage' })
+export default function MapPage() {
+  const el = createElement('main', { className: 'Mappage', hidden: true })
 
   function show() {
     el.hidden = false
