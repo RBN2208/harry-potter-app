@@ -1,0 +1,36 @@
+.Card {
+  display: grid;
+  grid-template-columns: 1fr 135px;
+  gap: 10px;
+  background-color: var(--color-secondary);
+  position: relative;
+  font-size: 0.8em;
+  padding: 12px;
+}
+
+.Card__picturebox {
+  width: 135px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0 0 23px var(--grey-shadow);
+}
+
+.Card img {
+  height: 230px;
+}
+
+.profilebox {
+  display: grid;
+  background-color: var(--color-secondary);
+  padding: 5px;
+  box-shadow: 0 0 23px var(--grey-shadow);
+}
+
+.Card__housename {
+  position: absolute;
+  left: 33%;
+  top: -11%;
+  font-size: 2.5em;
+  font-family: 'Jim Nightshade', cursive;
+  color: var(--color-third);
+}
