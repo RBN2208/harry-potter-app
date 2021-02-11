@@ -1,6 +1,6 @@
 .Grid {
   display: grid;
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 50px auto;
   height: 100vh;
   position: fixed;
   top: 0;
