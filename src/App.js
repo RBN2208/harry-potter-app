@@ -2,13 +2,11 @@ import Grid from './components/Grid'
 import AppHeader from './components/AppHeader'
 import getCharacters from './services/getCharacters'
 import createElement from './lib/createElement'
-// import Card from './components/Card'
 import Homepage from './components/Homepage'
 import PeoplePage from './components/PeoplePage'
 import MapPage from './components/MapPage'
 import HousePage from './components/HousePage'
 import CreatePage from './components/CreatePage'
-// import Navigation from './components/Navigation'
 
 export default function App() {
   const header = AppHeader('Harry Potter App')
@@ -28,12 +26,10 @@ export default function App() {
   )
   document.body.append(grid)
 
-  // fetch API
   getCharacters()
     .then(characters => createCards(characters))
     .catch(error => handleGetCharacterError(error))
 
-  // get characters to peoplepage
   function createCards(characters) {
     peoplePage.setCards(characters)
   }
