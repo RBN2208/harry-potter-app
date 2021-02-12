@@ -1,0 +1,29 @@
+.Navigation {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  width: 220px;
+  rotate: 45deg;
+  position: absolute;
+  top: 32%;
+  left: 21%;
+}
+
+.Navigation img {
+  height: 50px;
+  width: 50px;
+  rotate: -45deg;
+  position: absolute;
+  top: 21%;
+  left: 20%;
+}
+
+.Navigation__box {
+  padding: 15px;
+  border: 1px solid white;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: var(--color-greylight);
+  box-shadow: 0 0 7px var(--color-secondary);
+}

@@ -1,0 +1,7 @@
+.Createpage {
+  display: grid;
+  gap: 15px;
+  overflow-y: scroll;
+  padding: 15px 15px 0;
+  background-color: red;
+}

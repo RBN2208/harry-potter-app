@@ -1,0 +1,10 @@
+.Homebutton {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 15px 0;
+}
+
+.Homebutton img {
+  height: 50px;
+  width: 50px;
+}

@@ -1,11 +1,12 @@
 .AppHeader {
-  background: var(--color-primary);
+  background: var(--color-grey);
+  box-shadow: 0 0 10px var(--color-black);
   color: var(--color-white);
-  padding: 12px;
+  padding: 8px;
 }
 
 .AppHeader h1 {
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: center;
+  font-family: 'Jim Nightshade', cursive;
 }
