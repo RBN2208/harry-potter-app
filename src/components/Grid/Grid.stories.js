@@ -9,7 +9,6 @@ export default {
 const exampleChildren = [
   createElement('span', { style: 'background: skyblue' }, 'top'),
   createElement('span', { style: 'background: papayawhip' }, 'center'),
-  createElement('span', { style: 'background: skyblue' }, 'bottom'),
 ]
 
 export const base = () => Grid(...exampleChildren)

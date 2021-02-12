@@ -10,6 +10,6 @@ export default function Homebutton(onNavigate) {
   const button = createElement('img', { src: svgPath, alt: text })
   button.addEventListener('click', () => onNavigate(text, svgPath))
 
-  const el = createElement('nav', { className: 'Navigation' }, button)
+  const el = createElement('nav', { className: 'Homebutton' }, button)
   return el
 }
