@@ -1,7 +1,16 @@
 .Mappage {
-  display: grid;
-  gap: 15px;
-  overflow-y: scroll;
   padding: 15px 15px 0;
-  background: green;
+  display: grid;
+  grid-template-rows: 50px auto;
+}
+
+.Mappage__mapcontainer {
+  width: 350px;
+  height: 275px;
+  border-radius: 18px;
+  border: 7px solid var(--color-greylight);
+  overflow: scroll;
+  margin: auto;
+  scrollbar-width: none;
+  box-shadow: 0 0 18px var(--color-black);
 }
