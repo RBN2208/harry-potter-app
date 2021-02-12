@@ -25,12 +25,3 @@
   padding: 5px;
   box-shadow: 0 0 23px var(--grey-shadow);
 }
-
-.Card__housename {
-  position: absolute;
-  left: 33%;
-  top: -11%;
-  font-size: 2.5em;
-  font-family: 'Jim Nightshade', cursive;
-  color: var(--color-third);
-}
