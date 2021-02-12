@@ -1,18 +1,18 @@
 .Card {
   display: grid;
   grid-template-columns: 1fr 135px;
-  gap: 10px;
-  background-color: var(--color-secondary);
+  gap: 15px;
   position: relative;
   font-size: 0.8em;
-  padding: 12px;
+  border-radius: 25px;
+  box-shadow: 0 0 9px black;
 }
 
 .Card__picturebox {
   width: 135px;
   height: 200px;
   overflow: hidden;
-  box-shadow: 0 0 23px var(--grey-shadow);
+  border-radius: 0 25px 25px 0;
 }
 
 .Card img {
@@ -22,6 +22,8 @@
 .profilebox {
   display: grid;
   background-color: var(--color-secondary);
-  padding: 5px;
+  padding: 10px;
   box-shadow: 0 0 23px var(--grey-shadow);
+  border-radius: 25px 0 0 25px;
+  text-align: right;
 }
