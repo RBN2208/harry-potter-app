@@ -3,5 +3,9 @@
   gap: 15px;
   overflow-y: scroll;
   padding: 15px 15px 0;
-  background-color: yellow;
+}
+
+.Peoplepage__navcontainer {
+  display: flex;
+  justify-content: space-between;
 }

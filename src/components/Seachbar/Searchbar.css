@@ -1,0 +1,13 @@
+.Searchbar__bar {
+  padding: 5px 5px 5px 15px;
+  box-shadow: 0 0 5px var(--color-white);
+  border: none;
+  width: 85%;
+  background-color: var(--color-greylight);
+  border-radius: 15px;
+  color: rgb(216, 216, 216);
+}
+
+*:focus {
+  outline: none;
+}

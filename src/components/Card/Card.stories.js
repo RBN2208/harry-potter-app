@@ -5,4 +5,4 @@ export default {
   component: Card,
 }
 
-export const JS = () => Card('JS Title')
+export const JS = () => Card('Harry Potter')
