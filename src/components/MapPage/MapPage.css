@@ -1,16 +1,32 @@
 .Mappage {
   padding: 15px 15px 0;
   display: grid;
+  justify-content: center;
   grid-template-rows: 50px auto;
 }
 
 .Mappage__mapcontainer {
+  display: grid;
   width: 350px;
   height: 275px;
   border-radius: 18px;
   border: 7px solid var(--color-greylight);
-  overflow: scroll;
-  margin: auto;
+  overflow: hidden;
   scrollbar-width: none;
   box-shadow: 0 0 18px var(--color-black);
+}
+
+.Mappage__map {
+  width: 350px;
+}
+
+.Mappage__zoomIn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Mappage__zoomIn:active {
+  background-color: var(--color-secondary);
 }
