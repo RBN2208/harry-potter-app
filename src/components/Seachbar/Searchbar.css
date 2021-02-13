@@ -3,6 +3,7 @@
   box-shadow: 0 0 5px var(--color-white);
   border: none;
   width: 85%;
+  height: 30px;
   background-color: var(--color-greylight);
   border-radius: 15px;
   color: rgb(216, 216, 216);

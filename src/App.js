@@ -11,10 +11,12 @@ import CreatePage from './components/CreatePage'
 export default function App() {
   const header = AppHeader('Harry Potter App')
   const homePage = Homepage(onNavigate)
-  const peoplePage = PeoplePage(onNavigate)
+  const peoplePage = PeoplePage(onNavigate, liveSearch)
   const mapPage = MapPage(onNavigate)
   const housePage = HousePage(onNavigate)
   const createPage = CreatePage(onNavigate)
+
+  const characters = []
 
   const grid = Grid(
     header,
@@ -27,10 +29,14 @@ export default function App() {
   document.body.append(grid)
 
   getCharacters()
-    .then(characters => createCards(characters))
+    .then(data => {
+      characters.push(...data)
+      createCards(characters)
+    })
     .catch(error => handleGetCharacterError(error))
 
   function createCards(characters) {
+    peoplePage.cleanPeoplepage()
     peoplePage.setCards(characters)
   }
 
@@ -41,6 +47,15 @@ export default function App() {
       error.message
     )
     document.body.append(errorMessage)
+  }
+
+  function liveSearch(searchedValue) {
+    console.log(searchedValue)
+    const filterSearch = characters.filter(character =>
+      character.name.toLowerCase().includes(searchedValue.toLowerCase())
+    )
+    console.log(filterSearch)
+    createCards(filterSearch)
   }
 
   function onNavigate(text) {
