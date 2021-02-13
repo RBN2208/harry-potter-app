@@ -23,8 +23,8 @@ export default function PeoplePage(onNavigate, liveSearch) {
     cardcontainer.innerHTML = ''
   }
 
-  function setCards(character) {
-    const cardElements = character.map(character => Card(character))
+  function setCards(characters) {
+    const cardElements = characters.map(character => Card(character))
     cardcontainer.append(...cardElements)
   }
 
