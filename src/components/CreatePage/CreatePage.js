@@ -1,11 +1,13 @@
 import createElement from '../../lib/createElement'
 import Homebutton from '../Homebutton'
 import './CreatePage.css'
+import CreateForm from '../CreateForm'
 
-export default function CreatePage(onNavigate) {
+export default function CreatePage(onNavigate, onSubmit) {
   const el = createElement('main', { className: 'Createpage', hidden: true })
   const homebutton = Homebutton(onNavigate)
-  el.append(homebutton)
+  const form = CreateForm(onSubmit)
+  el.append(homebutton, form)
 
   function show() {
     el.hidden = false
