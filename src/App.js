@@ -40,10 +40,9 @@ export default function App() {
     peoplePage.setCards(characters)
   }
 
-  function onSubmit(name, house) {
-    characters.push({ name, house })
+  function onSubmit(name, house, yearOfBirth, ancestry, alive, image) {
+    characters.push({ name, house, yearOfBirth, ancestry, alive, image })
     peoplePage.cleanPeoplepage()
-
     peoplePage.setCards(characters)
   }
 
