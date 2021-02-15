@@ -14,7 +14,7 @@ export default function App() {
   const peoplePage = PeoplePage(onNavigate, liveSearch)
   const mapPage = MapPage(onNavigate)
   const housePage = HousePage(onNavigate)
-  const createPage = CreatePage(onNavigate)
+  const createPage = CreatePage(onNavigate, onSubmit)
 
   const characters = []
 
@@ -29,14 +29,21 @@ export default function App() {
   document.body.append(grid)
 
   getCharacters()
-    .then(data => {
-      characters.push(...data)
+    .then(character => {
+      characters.push(...character)
       createCards(characters)
     })
     .catch(error => handleGetCharacterError(error))
 
   function createCards(characters) {
     peoplePage.cleanPeoplepage()
+    peoplePage.setCards(characters)
+  }
+
+  function onSubmit(name, house) {
+    characters.push({ name, house })
+    peoplePage.cleanPeoplepage()
+
     peoplePage.setCards(characters)
   }
 
